@@ -39,18 +39,24 @@ body {
   height: 100vh;
 }
 
-.sort-paragraph,
+.sort__paragraph,
 .about-paragraph {
   font-family: "Roboto Flex", sans-serif;
 }
 
-.container-main {
+.container{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   margin-inline: 5%;
+  gap: 2rem;
+}
+
+.content,
+.sort {
+  display: flex;
+  width: 50%;
 }
 
 .logo {
