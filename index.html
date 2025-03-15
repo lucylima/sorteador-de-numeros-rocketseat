@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/animation.css">
     <link rel="shortcut icon" href="assets/numbers logo.png" type="image/x-icon">
     <title>Sorteador de número</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -68,7 +69,7 @@
         </p>
         <form class="sort__form">
           <div class="sort__container">
-            <label for="number__amount" class="number__label number__amount">
+            <label for="number__amount" class="number__label">
               Números
               <input
                 type="text"
@@ -81,7 +82,7 @@
             </label>
             <label
               for="number__min number__label"
-              class="number__label number__min"
+              class="number__label"
             >
               DE
               <input
@@ -95,16 +96,19 @@
             </label>
             <label
               for="number__max number__label"
-              class="number__label number__max"
+              class="number__label"
             >
               ATÉ
-              <input
+              <div class="form-input__border">
+                <input
                 type="text"
                 name="number__max"
                 class="number__max number__input"
                 value="100"
                 minlength="1"
+                maxlength="3"
               />
+              </div>
             </label>
           </div>
           <div class="switch__container">
@@ -114,7 +118,7 @@
             </label>
             Não Repetir números.
           </div>
-        <button type="submit" class="form__submit">
+        <button type="submit" class="form__submit sort__submit">
           SORTEAR
           <img src="./assets/right-arrow.svg" alt="seta para a direita" />
         </button>
@@ -130,5 +134,6 @@
         </button>
       </div>
     </main>
+    <script src="./script/script.js"></script>
   </body>
 </html>
